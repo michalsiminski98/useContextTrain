@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import ListItem from "../../atoms/ListItem/ListItem";
-import { UsersContext } from "../../templates/Root";
+import { UsersContext } from "../../providers/UserProvider";
 
 const List = () => {
   const { users } = useContext(UsersContext);

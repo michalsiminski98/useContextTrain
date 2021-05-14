@@ -1,13 +1,13 @@
 import { useContext } from "react";
-import { UsersContext } from "../../templates/Root";
 import PropTypes from "prop-types";
+import { UsersContext } from "../../providers/UserProvider";
 
 const ListItem = ({ name }) => {
   const { handleDeleteUser } = useContext(UsersContext);
 
   return (
     <li>
-      {name} <button onClick={() => handleDeleteUser(name)}></button>
+      {name} <button onClick={() => handleDeleteUser(name)}>Delete</button>
     </li>
   );
 };
